@@ -1,10 +1,12 @@
+const API_URL = '//localhost:3001/people';
+
 export async function fetchPeople() {
-  const response = await fetch('/api/people');
+  const response = await fetch(API_URL);
   return await response.json();
 }
 
 export async function updatePerson(id, patch) {
-  const response = await fetch(`/api/people/${id}`, {
+  const response = await fetch(`${API_URL}/${id}`, {
     method: 'PATCH',
     body: JSON.stringify(patch),
     headers: { 'Content-Type': 'application/json' }
