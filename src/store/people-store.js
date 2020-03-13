@@ -34,5 +34,3 @@ export default {
 };
 
 export const peopleIds = derived(people, $people => $people.map(person => person.id));
-
-// export const peopleIds = derived(people, $people => $people.map(p => p.id));

@@ -43,7 +43,37 @@
       "phone": "0685230125",
       "isManager": false,
       "manager": "Erika",
-      "managerId": "5763cd4d3b57c672861bfa1f"
+      "managerId": "5763cd4d3b57c672861bfa1f",
+      "person": {
+        "id": "5763cd4dba6362a3f92c954e",
+        "photo": "https://randomuser.me/portraits/women/24.jpg",
+        "firstname": "Phyllis1",
+        "lastname": "Donovan",
+        "entity": "PEARLESSA",
+        "entryDate": "30/03/2015",
+        "birthDate": "30/11/1951",
+        "gender": "f",
+        "email": "Phyllis.Donovan@PEARLESSA.com",
+        "phone": "0685230125",
+        "isManager": false,
+        "manager": "Erika",
+        "managerId": "5763cd4d3b57c672861bfa1f",
+        "person": {
+          "id": "5763cd4dba6362a3f92c954e",
+          "photo": "https://randomuser.me/portraits/women/24.jpg",
+          "firstname": "Phyllis",
+          "lastname": "Donovan",
+          "entity": "PEARLESSA",
+          "entryDate": "30/03/2015",
+          "birthDate": "30/11/1951",
+          "gender": "f",
+          "email": "Phyllis.Donovan@PEARLESSA.com",
+          "phone": "0685230125",
+          "isManager": false,
+          "manager": "Erika",
+          "managerId": "5763cd4d3b57c672861bfa1f"
+        }
+      }
     },
     {
       "id": "5763cd4d3b57c672861bfa1f",

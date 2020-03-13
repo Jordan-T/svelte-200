@@ -4,6 +4,7 @@
 	import Spinner from "./components/Spinner.svelte";
 	import Index from "./routes/index.svelte";
 	import Person from "./routes/person.svelte";
+	import Discover from "./routes/discover.svelte";
 	import { fetchPeople } from "./service/people";
 	import peopleStore from "./store/people-store";
 
@@ -40,6 +41,7 @@
 					<Spinner />
 				</div>
 			{:else}
+				<Route path="discover" component={Discover} />
 				<Route path="person/:id" component={Person} />
 				<Route path="/">
 					<Index />

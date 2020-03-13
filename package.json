@@ -5,9 +5,17 @@
   "dependencies": {
     "json-server": "^0.12.2",
     "sirv-cli": "^0.4.4",
-    "svelte-routing": "^1.4.2",
-    "todomvc-app-css": "^2.3.0",
-    "todomvc-common": "^1.0.5"
+		"svelte-routing": "^1.4.2",
+
+    "formsy-react": "^1.1.4",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "recompose": "^0.27.0",
+    "redux": "^4.0.0",
+		"redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
@@ -22,13 +30,19 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.4.0"
+    "svelte-preprocess": "^3.4.0",
+
+    "prettier": "^1.12.1",
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
-    "build": "rollup -c",
+		"build": "rollup -c",
+		"build:react": "react-scripts build",
     "dev": "run-p dev:svelte start:api",
+		"dev:react": "react-scripts start",
     "dev:svelte": "rollup -c -w",
-    "start": "sirv public",
+		"start": "sirv public",
+		"start:react": "sirv build",
     "start:api": "json-server --port 3001 data/people.json"
   },
   "proxy": {

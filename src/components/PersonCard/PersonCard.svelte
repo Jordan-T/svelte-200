@@ -10,15 +10,7 @@
 	export let id;
 	export let onEdit = null;
 
-	let person;
-
-	const unsubscribe = peopleStore.subscribe(items => {
-		person = items.find(i => i.id === id);
-	});
-
-	onDestroy(() => {
-		unsubscribe();
-	});
+	$: person = $peopleStore.find(i => i.id === id);
 </script>
 
 {#if person}
