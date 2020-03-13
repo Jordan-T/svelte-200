@@ -1,4 +1,4 @@
-const API_URL = 'http://my-json-server.typicode.com/Jordan-T/svelte-200/people';
+const API_URL = '//my-json-server.typicode.com/Jordan-T/svelte-200/people';
 
 export async function fetchPeople() {
   const response = await fetch(API_URL);
