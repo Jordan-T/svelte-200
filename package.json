@@ -43,7 +43,7 @@
     "dev:svelte": "rollup -c -w",
 		"start": "sirv public",
 		"start:react": "sirv build",
-    "start:api": "json-server --port 3001 data/people.json"
+    "start:api": "json-server --port 3001 db.json"
   },
   "proxy": {
     "/api": {
